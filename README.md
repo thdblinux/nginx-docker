@@ -28,9 +28,9 @@ Dessa forma, quando há um acréscimo nas solicitações ao servidor, como o aum
 Existem três possibilidades de distribuição da carga no NGINX. Ela pode ser feita igualmente entre os servidores configurados, ser distribuída para o servidor que tenha poucas conexões no momento ou é possível determinar o endereço IP de cada cliente para cada servidor específico.
 
 
-![alt text](/assets/nginxflow.drawio.png)
 
 Neste projeto, configurei o proxy reverso e o balanceador de carga. Além disso, otimizei o servidor para melhorar a performance do Nginx e apliquei políticas de segurança, gerando um certificado SSL para aumentar a segurança e autenticidade dos sites. Os servidores foram provisionados via Docker usando Docker Compose, garantindo um ambiente replicável e gerenciável. Também criei um servidor de backup para garantir que, caso os outros servidores fiquem offline, o serviço continue disponível. Com isso, todas as requisições são distribuídas de forma a atingir alta disponibilidade dos serviços web de acordo com a demanda.
+![alt text](/assets/nginxflow.drawio.png)
 
 **Servidores ONLINE**
 ![alt text](/assets/server1.png)
