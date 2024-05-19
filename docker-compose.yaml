@@ -1,0 +1,31 @@
+services:
+  nginx:
+    image: nginx:1.25
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+    - ./html:/usr/share/nginx/html:ro
+    - ./nginx:/etc/nginx
+    - ./cert:/cert
+
+  nginx1:
+    image: nginx:1.25
+    ports:
+      - "81:80"
+    volumes:
+    - ./html1:/usr/share/nginx/html:ro
+
+  nginx2:
+    image: nginx:1.25
+    ports:
+      - "82:80"
+    volumes:
+    - ./html2:/usr/share/nginx/html:ro
+  
+  nginx3:
+    image: nginx:1.25
+    ports:
+      - "83:80"
+    volumes:
+    - ./html3:/usr/share/nginx/html:ro

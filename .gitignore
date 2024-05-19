@@ -1,0 +1,14 @@
+# Arquivos SSL
+cert/*.crt
+cert/*.key
+
+# Arquivos de configuração do Nginx
+nginx/fastcgi_params
+nginx/scgi_params
+nginx/uwsgi_params
+
+# Diretório de módulos do Nginx (link simbólico)
+nginx/modules
+
+# Ignorar arquivos de índice HTML em diretórios html*
+html*/index.html
